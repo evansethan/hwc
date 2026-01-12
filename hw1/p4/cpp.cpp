@@ -3,7 +3,7 @@
 int i;
 int i;
 
-int function(){
+int function() {
 
     int new = 3.14159;
     printf("The number is: ");

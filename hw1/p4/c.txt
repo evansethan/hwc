@@ -1,0 +1,33 @@
+c.c compiles (with warnings) and runs successully:
+
+$ gcc p4/c.c && ./a.out  
+p4/c.c:8:15: warning: implicit conversion from 'double' to 'int' changes value from 3.14159 to 3 [-Wliteral-conversion]
+    int new = 3.14159;
+        ~~~   ^~~~~~~
+p4/c.c:12:13: warning: using the result of an assignment as a condition without parentheses [-Wparentheses]
+    if (new = 8) {
+        ~~~~^~~
+p4/c.c:12:13: note: place parentheses around the assignment to silence this warning
+    if (new = 8) {
+            ^
+        (      )
+p4/c.c:12:13: note: use '==' to turn this assignment into an equality comparison
+    if (new = 8) {
+            ^
+            ==
+p4/c.c:16:1: warning: non-void function does not return a value [-Wreturn-type]
+}
+^
+p4/c.c:18:1: warning: return type of 'main' is not 'int' [-Wmain-return-type]
+void main() {
+^
+p4/c.c:18:1: note: change return type to 'int'
+void main() {
+^~~~
+int
+p4/c.c:19:15: warning: too many arguments in call to 'function'
+    function(i);
+    ~~~~~~~~  ^
+5 warnings generated.
+The number is: 3
+Now the number is: 8

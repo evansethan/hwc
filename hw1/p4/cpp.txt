@@ -1,0 +1,22 @@
+cpp.cpp does not compile:
+
+$ g++ p4/cpp.cpp && ./a.out  
+p4/cpp.cpp:4:5: error: redefinition of 'i'
+int i;
+    ^
+p4/cpp.cpp:3:5: note: previous definition is here
+int i;
+    ^
+p4/cpp.cpp:8:9: error: expected unqualified-id
+    int new = 3.14159;
+        ^
+p4/cpp.cpp:10:23: error: expected a type
+    printf("%i\n", new);
+                      ^
+p4/cpp.cpp:20:2: error: expected '}'
+}
+ ^
+p4/cpp.cpp:6:16: note: to match this '{'
+int function() {
+               ^
+4 errors generated.

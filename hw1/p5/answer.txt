@@ -1,0 +1,1 @@
+In languages with the "++" operator, C++ evaluates to C, which ironically implies that the C++ language is the same as C. But the creators likely chose C++ instead of ++C because for branding/parsing/searching purposes it's better to start a language name with a letter of the alphabet rather than a more obscure symbol like "+"
